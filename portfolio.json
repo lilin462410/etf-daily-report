@@ -1,1 +1,96 @@
 
+{
+  "recipient": "ianliushadow@gmail.com",
+  "strategy": "長期定期定額 + 配息現金流",
+  "brokerApp": "台新證券行動達人",
+  "investableCash": 20000,
+  "monthlyDca": 3000,
+  "extraBuyLimit": 0,
+  "targetReserve": 0,
+  "annualDividendTarget": 100000,
+  "kdThreshold": 25,
+  "maxSingleWeight": 0.4,
+  "candidateCount": 2,
+  "holdings": [
+    {
+      "code": "0050",
+      "name": "元大台灣50",
+      "kind": "核心市值ETF",
+      "shares": 1800,
+      "avgCost": 65.15,
+      "fallbackPrice": 107.2,
+      "yieldRate": 0.0127,
+      "note": "長期核心；目前核心部位比重偏高時降低加碼順位"
+    },
+    {
+      "code": "0056",
+      "name": "元大高股息",
+      "kind": "配息ETF",
+      "shares": 2000,
+      "avgCost": 35.07,
+      "fallbackPrice": 53.2,
+      "yieldRate": 0.0676,
+      "note": "配息現金流主力候選"
+    },
+    {
+      "code": "006208",
+      "name": "富邦台50",
+      "kind": "核心市值ETF",
+      "shares": 1495,
+      "avgCost": 129.15,
+      "fallbackPrice": 248.1,
+      "yieldRate": 0.0179,
+      "note": "若單一標的超過上限，暫不優先加碼"
+    },
+    {
+      "code": "00919",
+      "name": "群益台灣精選高息",
+      "kind": "配息ETF",
+      "shares": 670,
+      "avgCost": 22.1,
+      "fallbackPrice": 30.26,
+      "yieldRate": 0.0945,
+      "note": "高配息但需注意波動、填息與配息來源"
+    },
+    {
+      "code": "2886",
+      "name": "兆豐金",
+      "kind": "金融股",
+      "shares": 2093,
+      "avgCost": 35.91,
+      "fallbackPrice": 46.65,
+      "yieldRate": 0.0343,
+      "note": "個股，不當成分散型 ETF"
+    }
+  ],
+  "watchlist": [
+    {
+      "code": "0056",
+      "name": "元大高股息",
+      "kind": "配息ETF",
+      "active": true,
+      "note": "現金流核心觀察"
+    },
+    {
+      "code": "00919",
+      "name": "群益台灣精選高息",
+      "kind": "配息ETF",
+      "active": true,
+      "note": "高配息但風險提醒要保留"
+    },
+    {
+      "code": "00878",
+      "name": "國泰永續高股息",
+      "kind": "配息ETF",
+      "active": true,
+      "note": "可作為分散型高股息觀察"
+    },
+    {
+      "code": "00713",
+      "name": "元大台灣高息低波",
+      "kind": "配息ETF",
+      "active": true,
+      "note": "較偏低波現金流觀察"
+    }
+  ]
+}
