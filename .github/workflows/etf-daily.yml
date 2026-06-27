@@ -1,1 +1,25 @@
+name: ETF Daily Report
 
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '35 10 * * 1-5'
+
+jobs:
+  send-etf-report:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Send ETF report
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          ETF_EMAIL_FROM: ${{ secrets.ETF_EMAIL_FROM }}
+          ETF_EMAIL_TO: ${{ secrets.ETF_EMAIL_TO }}
+        run: node send-etf-report.mjs
