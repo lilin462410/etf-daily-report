@@ -3,7 +3,7 @@ name: ETF Daily Report
 on:
   workflow_dispatch:
   schedule:
-    - cron: '35 10 * * 1-5'
+   - cron: '30 12 * * 1-5'
 
 jobs:
   send-etf-report:
@@ -15,7 +15,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
 
       - name: Send ETF report
         env:
